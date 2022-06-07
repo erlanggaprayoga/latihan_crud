@@ -14,7 +14,7 @@
             <td>No</td>
             <td>Id Barang</td>
             <td>Nama Barang</td>
-            <td>Telepon</td>
+            <td>Harga Barang (Rp)</td>
             <td>Alamat</td>
             <td>Jenis barang</td>
             <td>Opsi</td>
@@ -30,7 +30,7 @@
             <td><?php echo $no++ ?></td>
             <td><?php echo $hasil['id_barang'] ?></td>
             <td><?php echo $hasil['nama_barang'] ?></td>
-            <td><?php echo $hasil['telepon'] ?></td>
+            <td><?php echo $hasil['harga'] ?></td>
             <td><?php echo $hasil['alamat'] ?></td>
             <td><?php echo $hasil['jenis_barang'] ?></td>
             <td>

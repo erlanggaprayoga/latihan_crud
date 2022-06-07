@@ -28,9 +28,9 @@ $result = mysqli_fetch_array($data_edit);
             <td><input type="text" name="nama" value="<?php echo $result['nama_barang'] ?>" required></td>
         </tr>
         <tr>
-            <td>Telepon</td>
+            <td>Harga Barang (Rp)</td>
             <td>:</td>
-            <td><input type="text" name="telp" value="<?php echo $result['telepon'] ?>" required></td>
+            <td><input type="text" name="harga" value="<?php echo $result['harga'] ?>" required></td>
         </tr>
         <tr>
             <td>Alamat</td>
@@ -58,7 +58,7 @@ $result = mysqli_fetch_array($data_edit);
     <?php 
     if (isset($_POST['edit'])){
         $update = mysqli_query($conn, "UPDATE produk SET id_barang = '".$_POST['id_barang']."',   nama_barang = '".$_POST['nama']."',
-        telepon = '".$_POST['telp']."', alamat = '".$_POST['alamat']."', jenis_barang = '".$_POST['jenis_barang']."'
+        harga = '".$_POST['harga']."', alamat = '".$_POST['alamat']."', jenis_barang = '".$_POST['jenis_barang']."'
         WHERE id_barang ='".$_GET['id_barang']."'");
         if($update){
             echo 'Berhasil Edit';

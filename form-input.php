@@ -23,9 +23,9 @@
             <td><input type="text" name="nama" placeholder="nama barang" required></td>
         </tr>
         <tr>
-            <td>Telepon</td>
+            <td>Harga Barang (Rp)</td>
             <td>:</td>
-            <td><input type="text" name="telp" placeholder="telepon" required></td>
+            <td><input type="text" name="harga" placeholder="harga" required></td>
         </tr>
         <tr>
             <td>Alamat</td>
@@ -55,7 +55,7 @@
     $insert = mysqli_query($conn, "INSERT INTO produk VALUES
                             ('".$_POST['id_barang']."',
                             '".$_POST['nama']."',
-                            '".$_POST['telp']."',
+                            '".$_POST['harga']."',
                             '".$_POST['alamat']."',
                             '".$_POST['jenis_barang']."')");
         if($insert){
